@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:weightSum="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="0.7"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="#8B8B8B"
+                android:gravity="center_vertical"
+                android:text="111222"
+                android:textSize="24sp"/>
+
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:layout_weight="0.3"
+
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="60dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/img_praise"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+
+                    android:src="@mipmap/icon_praise"/>
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/img_reply"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                android:src="@mipmap/icon_comment"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>
